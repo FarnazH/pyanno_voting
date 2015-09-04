@@ -1,5 +1,5 @@
 import os
-from setuptools import setup
+from setuptools import find_packages, setup
 
 # Utility function to read the README file.
 # Used for the long_description.  It's nice, because now 1) we have a top level
@@ -17,7 +17,7 @@ setup(
     license = "BSD",
     keywords = "",
     url = "https://github.com/FarnazH/pyanno_voting.git",
-    packages=['pyanno'],
+    packages=find_packages(),
     long_description=read('README'),
     classifiers=[
         "Development Status :: 3 - Alpha",
